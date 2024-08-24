@@ -47,7 +47,7 @@ body {
 
 /* Logo */
     .logo {
-            height: 200px; /* Set the height to control size */
+            height: 250px; /* Set the height to control size */
             width: auto; /* Maintain aspect ratio */
             margin-right: 20px; /* Space between logo and nav links */
         }
