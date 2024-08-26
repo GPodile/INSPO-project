@@ -1,213 +1,211 @@
 /* Basic Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0; /* Removes default margin from all elements */
+    padding: 0; /* Removes default padding from all elements */
+    box-sizing: border-box; /* Ensures padding and border are included in element's total width and height */
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    color: #666;
-    background-color: #ffffff;
-    line-height: 1.6;
+    font-family: 'Arial', sans-serif; /* Sets the base font family */
+    color: #666; /* Sets the base text color */
+    background-color: #ffffff; /* Sets the background color */
+    line-height: 1.6; /* Sets the base line height for text */
 }
 
 /* Header Section */
 header {
-    background-color: #958b8b;
-    color: black;
-    padding: 20px 0;
-    text-align: center;
+    background-color: #958b8b; /* Background color of the header */
+    color: black; /* Text color in the header */
+    padding: 20px 0; /* Vertical padding for the header */
+    text-align: center; /* Center-aligns the content */
 }
 
 header .header-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
+    max-width: 1200px; /* Maximum width of the header container */
+    margin: 0 auto; /* Centers the container horizontally */
+    display: flex; /* Uses flexbox for layout */
+    justify-content: space-between; /* Distributes space between the logo and navigation */
+    align-items: center; /* Aligns items vertically in the center */
+    padding: 0 20px; /* Adds horizontal padding */
 }
 
 header h1 {
-    margin: 0;
-    font-size: 1.5rem;
+    margin: 0; /* Removes margin around the title */
+    font-size: 1.5rem; /* Sets the font size */
 }
 
 nav {
-    display: flex;
-    flex-wrap: wrap;
+    display: flex; /* Displays the navigation links inline */
+    flex-wrap: wrap; /* Allows wrapping of links to the next line if needed */
 }
 
 nav a {
-    color: black;
-    margin-left: 20px;
-    text-decoration: none;
-    font-size: 1rem;
-    padding: 5px 15px;
-    border: 1px solid rgba(47, 46, 46, 0.95);
-    border-radius: 5px;
-    transition: all 0.3s ease;
+    color: black; /* Sets the text color of the links */
+    margin-left: 20px; /* Adds left margin between links */
+    text-decoration: none; /* Removes underline from links */
+    font-size: 1rem; /* Sets the font size */
+    padding: 5px 15px; /* Adds padding inside the links */
+    border: 1px solid rgba(47, 46, 46, 0.95); /* Adds a border to the links */
+    border-radius: 5px; /* Rounds the corners of the border */
+    transition: all 0.3s ease; /* Adds a smooth transition effect for hover */
 }
 
 nav a:hover {
-    color: white;
-    background-color: #45a049;
-    border-color: #45a049;
-    text-decoration: none;
+    color: white; /* Changes text color on hover */
+    background-color: #45a049; /* Changes background color on hover */
+    border-color: #45a049; /* Changes border color on hover */
+    text-decoration: none; /* Ensures underline is not added on hover */
 }
 
 /* Logo */
 .logo {
-    height: 225px;
-    width: auto;
-    margin-right: 1px;
+    height: 225px; /* Sets the height of the logo */
+    width: auto; /* Automatically adjusts the width to maintain aspect ratio */
+    margin-right: 1px; /* Adds a small margin to the right of the logo */
 }
 
 /* Search Bar Section */
 .search-bar {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
+    display: flex; /* Uses flexbox to align items */
+    justify-content: center; /* Centers the search bar horizontally */
+    margin: 20px 0; /* Adds vertical margin above and below the search bar */
 }
 
 .search-bar input {
-    padding: 10px;
-    width: 60%;
-    border: 2px solid #ccc;
-    border-radius: 5px;
+    padding: 10px; /* Adds padding inside the input field */
+    width: 60%; /* Sets the width of the input field */
+    border: 2px solid #ccc; /* Adds a border to the input field */
+    border-radius: 5px; /* Rounds the corners of the input field */
 }
 
 .search-bar button {
-    padding: 10px 20px;
-    background-color: #958b8b;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    margin-left: 10px;
-    cursor: pointer;
+    padding: 10px 20px; /* Adds padding inside the button */
+    background-color: #958b8b; /* Sets the background color of the button */
+    color: white; /* Sets the text color of the button */
+    border: none; /* Removes the border from the button */
+    border-radius: 5px; /* Rounds the corners of the button */
+    margin-left: 10px; /* Adds a margin to the left of the button */
+    cursor: pointer; /* Changes the cursor to a pointer when hovered */
 }
 
 .search-bar button:hover {
-    background-color: #45a049;
+    background-color: #45a049; /* Changes the background color on hover */
 }
 
 main {
-    text-align: center;
+    text-align: center; /* Centers the main content */
 }
 
 /* Categories Section */
 .categories {
-    display: flex;
-    justify-content: center;
-    background-color: #f5f5f5;
-    padding: 20px 0;
-    border-bottom: 1px solid #ddd;
+    display: flex; /* Uses flexbox to align items */
+    justify-content: center; /* Centers the categories horizontally */
+    background-color: #f5f5f5; /* Sets the background color */
+    padding: 20px 0; /* Adds vertical padding */
+    border-bottom: 1px solid #ddd; /* Adds a border at the bottom */
 }
 
 .categories a {
-    margin: 0 20px;
-    text-decoration: none;
-    color: #666;
-    font-size: 1rem;
-    font-weight: bold;
+    margin: 0 20px; /* Adds horizontal margin between links */
+    text-decoration: none; /* Removes underline from links */
+    color: #666; /* Sets the text color */
+    font-size: 1rem; /* Sets the font size */
+    font-weight: bold; /* Makes the text bold */
 }
 
 .categories a:hover {
-    color: #4CAF50;
+    color: #4CAF50; /* Changes the text color on hover */
 }
 
 /* Product Grid Section */
 .product-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    max-width: 1200px;
-    margin: 20px auto;
+    display: flex; /* Uses flexbox to align products */
+    flex-wrap: wrap; /* Allows wrapping of products to the next line */
+    justify-content: space-around; /* Distributes space between products */
+    max-width: 1200px; /* Sets the maximum width of the product grid */
+    margin: 20px auto; /* Adds vertical margin and centers the grid */
 }
 
 .product {
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 10px;
-    text-align: center;
-    flex: 1 1 calc(25% - 40px);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white; /* Sets the background color of the product card */
+    border: 1px solid #ddd; /* Adds a border to the product card */
+    border-radius: 10px; /* Rounds the corners of the product card */
+    padding: 20px; /* Adds padding inside the product card */
+    margin: 10px; /* Adds margin around the product card */
+    text-align: center; /* Centers the text inside the product card */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+    flex-basis: 23%; /* Sets the base width of the product card */
 }
 
 .product img {
-    width: 100%;
-    border-radius: 10px;
+    width: 100%; /* Sets the image to fill the width of the product card */
+    border-radius: 5px; /* Rounds the corners of the image */
 }
 
 .product h3 {
-    margin: 10px 0;
-    font-size: 1.2rem;
-    color: #333;
+    margin: 15px 0; /* Adds vertical margin above and below the product name */
+    font-size: 1.2rem; /* Sets the font size of the product name */
+    color: #333; /* Sets the color of the product name */
 }
 
 .product p {
-    font-size: 1rem;
-    color: black;
+    font-size: 1rem; /* Sets the font size of the product price */
+    color: #666; /* Sets the color of the product price */
 }
 
 .product button {
-    padding: 10px 20px;
-    background-color: #958b8b;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    padding: 10px 15px; /* Adds padding inside the button */
+    background-color: #4CAF50; /* Sets the background color of the button */
+    color: white; /* Sets the text color of the button */
+    border: none; /* Removes the border from the button */
+    border-radius: 5px; /* Rounds the corners of the button */
+    cursor: pointer; /* Changes the cursor to a pointer when hovered */
 }
 
 .product button:hover {
-    background-color: #45a049;
+    background-color: #45a049; /* Changes the background color on hover */
 }
 
 /* Footer Section */
 footer {
-    background-color: #333;
-    color: #f5f5f5;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 20px;
+    background-color: #958b8b; /* Sets the background color of the footer */
+    color: white; /* Sets the text color of the footer */
+    text-align: center; /* Centers the text in the footer */
+    padding: 10px 0; /* Adds vertical padding */
+    margin-top: 20px; /* Adds margin to the top of the footer */
 }
 
 footer p {
-    margin: 0;
-    font-size: 1rem;
+    margin: 0; /* Removes margin around the text */
+    font-size: 0.9rem; /* Sets the font size of the text */
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    /* Styles for devices with a maximum width of 768px */
     nav {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav a {
-        margin: 5px 0;
-        width: 100%;
-        text-align: center;
+        flex-direction: column; /* Stacks the navigation links vertically */
+        align-items: center; /* Centers the links */
     }
 
     .logo {
-        height: 150px;
+        height: 175px; /* Resizes the logo for smaller screens */
     }
 
     .search-bar input {
-        width: 80%;
+        width: 80%; /* Adjusts the input field width for smaller screens */
     }
 
     .categories {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column; /* Stacks the category links vertically */
     }
 
     .categories a {
-        margin: 10px 0;
+        margin: 10px 0; /* Adds vertical margin between links */
+    }
+
+    .product {
+        flex-basis: 45%; /* Adjusts the base width of the product card for smaller screens */
     }
 }
 
