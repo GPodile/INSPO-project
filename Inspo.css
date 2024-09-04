@@ -123,6 +123,39 @@ header {
             border-radius: 4px;
         }
 
+/* Welcome Section */
+.welcome-section {
+    background-image: url('path_to_your_background_image.jpg'); /* Background image */
+    background-size: cover; /* Ensure the background covers the whole section */
+    background-position: center; /* Center the background image */
+    padding: 100px 20px; /* Padding for spacing */
+    text-align: center; /* Center the text */
+    color: rgb(19, 17, 17); /* White text color */
+}
 
+.welcome-content h1 {
+    font-size: 48px; /* Large font size for the main text */
+    font-weight: bold; /* Bold text */
+    margin-bottom: 20px; /* Spacing below the main text */
+}
+
+.welcome-content p {
+    font-size: 24px; /* Smaller font size for the secondary text */
+    margin-bottom: 30px; /* Spacing below the secondary text */
+}
+
+.show-more-btn {
+    font-size: 18px; /* Font size for the button */
+    padding: 10px 20px; /* Padding inside the button */
+    background-color: #333; /* Dark background color */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.show-more-btn:hover {
+    background-color: #555; /* Slightly lighter color on hover */
+}
 
 
