@@ -214,5 +214,43 @@ header {
     height: auto;
 }
 
+/* Benefits Section */
+.benefits-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+    border-top: 1px solid #ccc;
+}
+
+.benefit {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.benefit i {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.benefit h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.benefit p {
+    font-size: 16px;
+    color: #666;
+}
+
+.benefit:hover i {
+    color: #555;
+}
+
+
 
 
