@@ -131,6 +131,7 @@ header {
     padding: 100px 20px; /* Padding for spacing */
     text-align: center; /* Center the text */
     color: rgb(19, 17, 17); /* White text color */
+    border: 1px black solid;
 }
 
 .welcome-content h1 {
@@ -157,5 +158,61 @@ header {
 .show-more-btn:hover {
     background-color: #555; /* Slightly lighter color on hover */
 }
+
+/* Special Offer Section */
+.special-offer-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 20px;
+    background-color: #f8f8f8; /* Background color for the section */
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    /* border: 1px black solid; */
+}
+
+.offer-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px; /* Limit the maximum width */
+}
+
+.offer {
+    flex: 1;
+    margin: 0 20px;
+    text-align: center;
+    position: relative; /* For positioning the button over the image */
+}
+
+.offer img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.shop-now-btn {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.shop-now-btn:hover {
+    background-color: #555;
+}
+
+/* Ensure the Special Offer section matches the height of the Welcome section */
+.special-offer-section, .welcome-section {
+    height: auto;
+}
+
 
 
