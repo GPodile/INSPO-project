@@ -216,40 +216,37 @@ header {
 
 /* Benefits Section */
 .benefits-section {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 50px 20px;
-    background-color: #f0f0f0;
-    text-align: center;
+    display: flex; /* Use Flexbox for horizontal layout */
+    justify-content: space-around; /* Distribute items with space around them */
+    align-items: center; /* Center items vertically */
+    padding: 50px 20px; /* Padding for spacing */
+    background-color: #f8f8f8; /* Background color for the section */
     border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
 }
 
 .benefit {
-    flex: 1;
-    margin: 0 20px;
+    flex: 1; /* Allow benefits to grow and shrink equally */
+    text-align: center; /* Center text within each benefit */
+    margin: 0 20px; /* Space between benefits */
 }
 
 .benefit i {
-    font-size: 48px;
-    color: #333;
-    margin-bottom: 20px;
+    font-size: 36px; /* Icon size */
+    color: #333; /* Icon color */
+    margin-bottom: 10px; /* Space below the icon */
 }
 
 .benefit h3 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
+    font-size: 20px; /* Heading font size */
+    margin-bottom: 10px; /* Space below the heading */
 }
 
 .benefit p {
-    font-size: 16px;
-    color: #666;
+    font-size: 16px; /* Paragraph font size */
+    color: #666; /* Paragraph text color */
 }
 
-.benefit:hover i {
-    color: #555;
-}
 
 /* Best Sellers Section */
 .best-sellers-section {
@@ -265,17 +262,22 @@ header {
     font-weight: bold;
 }
 
-.best-sellers-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columns for desktop */
-    gap: 20px; /* Space between the grid items */
+/* Flexbox layout for best sellers */
+.best-sellers-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; /* Space between the items */
 }
 
+/* Product Card Styling */
 .product {
     background-color: #fff;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 8px;
+    width: calc(25% - 20px); /* 4 products per row for desktop */
+    box-sizing: border-box;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -306,17 +308,35 @@ header {
     color: #FFD700; /* Gold color for the stars */
 }
 
-/* Responsive design for smaller screens */
+/* View All Button */
+.view-all-btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.view-all-btn:hover {
+    background-color: #555; /* Slightly lighter color on hover */
+}
+
+/* Responsive for Tablets and Smaller Screens */
 @media (max-width: 992px) {
-    .best-sellers-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+    .product {
+        width: calc(50% - 20px); /* 2 products per row for tablets */
     }
 }
 
 @media (max-width: 600px) {
-    .best-sellers-grid {
-        grid-template-columns: 1fr; /* 1 column for mobile */
+    .product {
+        width: 100%; /* 1 product per row for mobile */
     }
 }
+
 
 
