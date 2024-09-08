@@ -3,70 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | INSPO Stationery Store</title>
-    <link rel="stylesheet" href="../Inspo.css">
-    <link rel="stylesheet" href="./contacts.css">
+    <title>Contact Us - INSPO Stationery Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../Inspo.css"> <!-- Main styles -->
+    <link rel="stylesheet" href="./contacts.css"> <!-- Contact-specific styles -->
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
-        <div class="header-container">
-            <img src="../Images/INSPO_Logo_Trans.png" alt="INSPO Logo" class="logo">
-            <nav>
-                <a href="../index.html">Home</a>
-                <a href="./Pencils_And_Pens.html">Pencils & Pens</a>
-                <a href="./Notebooks.html">Notebooks</a>
-                <a href="./Art_Supplies.html">Art Supplies</a>
-                <a href="./Office.html">Office Planner</a>
-                <a href="./contacts.html">Contact</a>
-                <a href="#">Cart (0)</a>
-            </nav>
-        </div>
-    </header>
 
-    <!-- Contact Page Section -->
-    <div class="contact-container">
+<!-- Header Section (Reused from your site) -->
+<!-- Header Section -->
+<header class="header">
+    <div class="container">
+        <div class="header-top">
+            <div class="logo">INSPO Stationery</div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for products...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-counter">3</span>
+            </div>
+        </div>
+        <nav class="nav-bar">
+            <a href="../index.html">Home</a>
+            <a href="./shop.html">Shop</a>
+            <a href="#">Categories</a>
+            <a href="#">About Us</a>
+            <a href="./contacts.html">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<!-- Contact Section -->
+<section class="contact-page">
+    <div class="container">
         <h2>Contact Us</h2>
+        <div class="contact-info-grid">
+            <!-- Contact Info Section -->
+            <div class="contact-info">
+                <h3>Get in Touch</h3>
+                <p>Have questions? Reach out to us for any assistance.</p>
+                <ul>
+                    <li><i class="fas fa-phone-alt"></i> +27 123 456 789</li>
+                    <li><i class="fas fa-envelope"></i> support@inspostationery.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Stationery Lane, Johannesburg, South Africa</li>
+                    <li><i class="fas fa-clock"></i> Business Hours: 9am - 6pm, Mon - Sat</li>
+                </ul>
+            </div>
 
-        <!-- Contact Form -->
-        <form class="contact-form" action="#" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="6" required></textarea>
-            
-            <button type="submit">Send Message</button>
-        </form>
-
-        <!-- Contact Info -->
-        <div class="contact-info">
-            <h3>Our Address</h3>
-            <p>123 Stationery Street</p>
-            <p>Booktown, BK 45678</p>
-            <p>Country</p>
-
-            <h3>Phone</h3>
-            <p>+27 67 546 9151</p>
-
-            <h3>Email</h3>
-            <p>support@inspostationery.com</p>
-        </div>
-
-        <!-- Social Media Links -->
-        <div class="social-links">
-            <a href="https://www.facebook.com/INSPOStationery" target="_blank">Facebook</a>
-            <a href="https://twitter.com/INSPOStationery" target="_blank">Twitter</a>
-            <a href="https://www.instagram.com/INSPOStationery" target="_blank">Instagram</a>
+            <!-- Contact Form Section -->
+            <div class="contact-form">
+                <h3>Send Us a Message</h3>
+                <form action="#">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" rows="5" placeholder="Enter your message" required></textarea>
+                    </div>
+                    <button type="submit" class="cta-button">Submit</button>
+                </form>
+            </div>
         </div>
     </div>
+</section>
 
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2024 INSPO Stationery Store. All rights reserved.</p>
-    </footer>
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section about">
+            <h3>About INSPO</h3>
+            <p>INSPO Stationery is your one-stop shop for all things stationery. From notebooks to art supplies, we offer it all!</p>
+        </div>
+        <div class="footer-section links">
+            <h3>Customer Service</h3>
+            <ul>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Shipping Info</a></li>
+                <li><a href="#">Return Policy</a></li>
+            </ul>
+        </div>
+        <div class="footer-section location">
+            <h3>Our Store</h3>
+            <p>123 Stationery Lane, Johannesburg, South Africa</p>
+        </div>
+    </div>
+</footer>
+
 </body>
 </html>
+

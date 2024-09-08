@@ -1,96 +1,142 @@
-/* Contact Page Styles */
-.contact-container {
-    max-width: 800px;
-    margin: 20px auto;
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Contact Page */
+.contact-page {
+    padding: 40px 20px; /* Add padding for smaller screens */
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.contact-page h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-info, .contact-form {
+    flex: 1;
+    min-width: 300px; /* Ensure proper size on smaller screens */
+    margin: 20px;
+    background-color: #fff;
     padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
+    border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.contact-container h2 {
-    text-align: center;
-    margin-bottom: 20px;
+/* Contact Info Section */
+.contact-info h3 {
+    font-size: 24px;
     color: #333;
+    margin-bottom: 10px;
 }
 
-.contact-form {
-    display: flex;
-    flex-direction: column;
+.contact-info p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
 }
 
-.contact-form label {
-    margin-bottom: 5px;
-    font-weight: bold;
+.contact-info ul {
+    list-style: none;
+    padding: 0;
 }
 
-.contact-form input,
-.contact-form textarea {
+.contact-info li {
     margin-bottom: 15px;
+    font-size: 16px;
+    color: #666;
+}
+
+.contact-info li i {
+    color: #333;
+    margin-right: 10px;
+}
+
+/* Contact Form */
+.contact-form h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
     padding: 10px;
-    border: 2px solid #ccc;
-    border-radius: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
 }
 
 .contact-form button {
     padding: 10px 20px;
-    background-color: #958b8b;
+    background-color: #333;
     color: white;
+    font-size: 16px;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 .contact-form button:hover {
-    background-color: #45a049;
+    background-color: #555;
 }
 
-.contact-info {
-    margin: 20px 0;
-}
-
-.contact-info h3 {
-    color: #333;
-}
-
-.contact-info p {
-    margin: 5px 0;
-}
-
-.social-links {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
-}
-
-.social-links a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: #666;
-    font-size: 1.5rem;
-}
-
-.social-links a:hover {
-    color: #4CAF50;
-}
-
-/* Responsive Design */
+/* Responsive Styles */
 @media (max-width: 768px) {
-    .contact-container {
-        padding: 15px;
+    .contact-grid {
+        flex-direction: column; /* Stack the form and info vertically */
     }
 
-    .contact-form input,
-    .contact-form textarea {
-        width: 100%;
+    .contact-form, .contact-info {
+        margin: 0 auto 20px; /* Center on smaller screens */
+        width: 100%; /* Full width on mobile */
     }
 
-    .social-links {
-        flex-direction: column;
-        align-items: center;
+    .contact-form h3, .contact-info h3 {
+        font-size: 20px; /* Adjust font size for smaller screens */
     }
 
-    .social-links a {
-        margin: 5px 0;
+    .contact-form button {
+        width: 100%; /* Full-width button on mobile */
     }
 }
+
+@media (max-width: 480px) {
+    .contact-page h2 {
+        font-size: 24px; /* Smaller header on very small screens */
+    }
+
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form textarea {
+        padding: 8px; /* Slightly smaller input padding on small screens */
+    }
+
+    .contact-form button {
+        font-size: 14px;
+        padding: 8px; /* Adjust button size for smaller screens */
+    }
+}
+
