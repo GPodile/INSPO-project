@@ -401,8 +401,9 @@ body {
     .category-item,
     .product,
     .benefit-item,
-    .footer .footer-section {
-        width: 45%;
+    .footer .footer-section,
+    .product-item {
+        width: 45%; /* Adjust width for larger tablets */
     }
 }
 
@@ -442,7 +443,8 @@ body {
     .category-item,
     .product,
     .benefit-item,
-    .footer .footer-section {
+    .footer .footer-section,
+    .product-item {
         width: 100%; /* Full width for smaller screens */
     }
     
