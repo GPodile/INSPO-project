@@ -458,6 +458,11 @@ body {
     }
 }
 
+.cart-icon {
+    margin-left: 10px; /* Maintain space between search bar and cart icon */
+}
+
+
 
 
        
