@@ -1,30 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Metadata about the document such as character encoding and viewport settings -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INSPO Stationery Store</title>
+
+    <!-- Linking external CSS and FontAwesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="./Inspo.css">
+    <script src="./Inspo.js"></script> <!-- External JavaScript file for interactions -->
+
 </head>
+
 <body>
 
 <!-- Header Section -->
 <header class="header">
     <div class="container">
         <div class="header-top">
-            <div class="logo">INSPO Stationery</div>
-            <div class="search-bar">
-                <input type="text" placeholder="Search for products...">
-                <button><i class="fas fa-search"></i></button>
+            <!-- Logo of the website (left-aligned) -->
+            <div class="logo">IS</div>
+
+            <!-- Hamburger Menu Icon for mobile navigation -->
+            <div class="hamburger-menu">
+                <i class="fas fa-bars"></i>
             </div>
+
+            <!-- Shopping cart icon with counter to show number of items in cart -->
             <div class="cart-icon">
                 <i class="fas fa-shopping-cart"></i>
-                <span class="cart-counter">3</span>
+                <span class="cart-counter">3</span> <!-- Counter showing 3 items in the cart -->
+            </div>
+
+            <!-- Search bar where users can search for products -->
+            <div class="search-bar">
+                <input type="text" placeholder="Search for products..."> <!-- Text input field -->
+                <button><i class="fas fa-search"></i></button> <!-- Search button with icon -->
             </div>
         </div>
 
-        <!-- Navigation Bar -->
+        <!-- Navigation Bar linking to different pages of the site -->
         <nav class="nav-bar">
             <a href="./index.html">Home</a>
             <a href="./pages/shop.html">Shop</a>
@@ -39,6 +56,7 @@
 <section class="categories">
     <div class="container">
         <h2>Shop by Categories</h2>
+        <!-- Category list with links to respective product pages -->
         <div class="category-list">
             <a href="./pages/Art.html" class="category-item">Art Supplies</a>
             <a href="./pages/Notebooks.html" class="category-item">Notebooks</a>
@@ -50,18 +68,21 @@
 
 <!-- Hero Section (Welcome Banner) -->
 <section class="hero">
+    <!-- Content for the hero banner including the heading and call-to-action button -->
     <div class="hero-content">
         <h1>Incredible Prices on All Your Favorite Items</h1>
-        <button class="cta-button">Shop Now</button>
+        <button class="cta-button">Shop Now</button> <!-- Button directing users to shop -->
     </div>
 </section>
 
-<!-- Featured Categories/Products -->
+<!-- Featured Categories/Products Section -->
 <section class="featured">
     <h2>Shop by Categories</h2>
+    <!-- Grid layout displaying different product categories -->
     <div class="category-grid">
+        <!-- Category item with an image and label -->
         <div class="category-item">
-            <img src="path_to_image1.jpg" alt="Category 1">
+            <img src="path_to_image1.jpg" alt="Category 1"> <!-- Placeholder for image -->
             <h3>Art Supplies</h3>
         </div>
         <div class="category-item">
@@ -78,91 +99,42 @@
 <!-- Best Sellers Section -->
 <section class="best-sellers">
     <h2>Best Sellers</h2>
+    <!-- Flexbox layout displaying the best-selling products -->
     <div class="best-sellers-flex">
+        <!-- Individual product block including image, name, price, and rating -->
         <div class="product">
-            <img src="path_to_product1.jpg" alt="Product 1">
+            <img src="path_to_product1.jpg" alt="Product 1"> <!-- Placeholder for product image -->
             <h3>Product Name 1</h3>
-            <p class="price">R19.99</p>
+            <p class="price">R19.99</p> <!-- Display product price -->
+            <!-- Product rating with star icons -->
             <p class="rating">
                 <i class="fas fa-star"></i><i class="fas fa-star"></i>
                 <i class="fas fa-star"></i><i class="fas fa-star"></i>
-                <i class="far fa-star"></i>
+                <i class="far fa-star"></i> <!-- 4 filled stars and 1 empty star -->
             </p>
-            <a href="#" class="view-all-btn">View Product</a>
-        </div>
-        <div class="product">
-            <img src="path_to_product2.jpg" alt="Product 2">
-            <h3>Product Name 2</h3>
-            <p class="price">R25.99</p>
-            <p class="rating">
-                <i class="fas fa-star"></i><i class="fas fa-star"></i>
-                <i class="fas fa-star"></i><i class="far fa-star"></i>
-            </p>
-            <a href="#" class="view-all-btn">View Product</a>
-        </div>
-        <div class="product">
-            <img src="path_to_product1.jpg" alt="Product 1">
-            <h3>Product Name 1</h3>
-            <p class="price">R19.99</p>
-            <p class="rating">
-                <i class="fas fa-star"></i><i class="fas fa-star"></i>
-                <i class="fas fa-star"></i><i class="fas fa-star"></i>
-                <i class="far fa-star"></i>
-            </p>
-            <a href="#" class="view-all-btn">View Product</a>
-        </div>
-        <div class="product">
-            <img src="path_to_product1.jpg" alt="Product 1">
-            <h3>Product Name 1</h3>
-            <p class="price">R19.99</p>
-            <p class="rating">
-                <i class="fas fa-star"></i><i class="fas fa-star"></i>
-                <i class="fas fa-star"></i><i class="fas fa-star"></i>
-                <i class="far fa-star"></i>
-            </p>
-            <a href="#" class="view-all-btn">View Product</a>
-        </div>
-        <div class="product">
-            <img src="path_to_product1.jpg" alt="Product 1">
-            <h3>Product Name 1</h3>
-            <p class="price">R19.99</p>
-            <p class="rating">
-                <i class="fas fa-star"></i><i class="fas fa-star"></i>
-                <i class="fas fa-star"></i><i class="fas fa-star"></i>
-                <i class="far fa-star"></i>
-            </p>
-            <a href="#" class="view-all-btn">View Product</a>
-        </div>
-        <div class="product">
-            <img src="path_to_product1.jpg" alt="Product 1">
-            <h3>Product Name 1</h3>
-            <p class="price">R19.99</p>
-            <p class="rating">
-                <i class="fas fa-star"></i><i class="fas fa-star"></i>
-                <i class="fas fa-star"></i><i class="fas fa-star"></i>
-                <i class="far fa-star"></i>
-            </p>
-            <a href="#" class="view-all-btn">View Product</a>
+            <a href="#" class="view-all-btn">View Product</a> <!-- Button to view product details -->
         </div>
     </div>
 </section>
 
-<!-- Benefits Section -->
+<!-- Benefits Section (Why Shop with Us) -->
 <section class="benefits">
     <h2>Why Shop with Us?</h2>
+    <!-- Grid displaying benefits of shopping at INSPO -->
     <div class="benefits-grid">
+        <!-- Individual benefit item with an icon, title, and description -->
         <div class="benefit-item">
-            <i class="fas fa-shipping-fast"></i>
+            <i class="fas fa-shipping-fast"></i> <!-- Icon representing free shipping -->
             <h3>Free Shipping</h3>
             <p>On all orders above R500.</p>
         </div>
         <div class="benefit-item">
-            <i class="fas fa-clock"></i>
+            <i class="fas fa-clock"></i> <!-- Icon representing 24/7 service -->
             <h3>24/7 Service</h3>
             <p>Shop online anytime, anywhere.</p>
         </div>
         <div class="benefit-item">
-            <i class="fas fa-thumbs-up"></i>
+            <i class="fas fa-thumbs-up"></i> <!-- Icon representing quality assurance -->
             <h3>Quality Assurance</h3>
             <p>Top quality stationery guaranteed.</p>
         </div>
@@ -172,10 +144,12 @@
 <!-- Footer Section -->
 <footer class="footer">
     <div class="footer-content">
+        <!-- About section with description of the store -->
         <div class="footer-section about">
             <h3>About INSPO</h3>
             <p>INSPO Stationery is your one-stop shop for all things stationery. From notebooks to art supplies, we offer it all!</p>
         </div>
+        <!-- Links to customer service pages -->
         <div class="footer-section links">
             <h3>Customer Service</h3>
             <ul>
@@ -184,6 +158,7 @@
                 <li><a href="#">Return Policy</a></li>
             </ul>
         </div>
+        <!-- Store location information -->
         <div class="footer-section location">
             <h3>Our Store</h3>
             <p>123 Stationery Lane, Johannesburg, South Africa</p>
@@ -193,11 +168,3 @@
 
 </body>
 </html>
-
-
-
-
-
-
-
-
